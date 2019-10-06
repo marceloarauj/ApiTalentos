@@ -1,11 +1,6 @@
 import subprocess
 import sys
 
-try:
-    subprocess.call([sys.executable,"-m","pip","install","Flask"])
-except:
-    print("ERRO NA INSTALAÇÃO DE MÓDULOS")
-
 from flask import Flask
 app = Flask(__name__)
 
