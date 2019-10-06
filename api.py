@@ -1,6 +1,9 @@
 import subprocess
 import sys
 
+subprocess.call([sys.executable,"-m","pip","install","gunicorn"])
+subprocess.call([sys.executable,"pip","install","requirements.txt"])
+
 from flask import Flask
 app = Flask(__name__)
 
